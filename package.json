@@ -49,7 +49,8 @@
     "build:example": "rm -rf example-dist && parcel build example/index.html -d example-dist --public-url ./",
     "start": "rm -rf example-dist && parcel example/index.html -d example-dist",
     "precommit": "lint-staged",
-    "prepublishOnly": "npm run -s build"
+    "prepublishOnly": "npm run -s build",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.0.0",
